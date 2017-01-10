@@ -6,6 +6,8 @@ Clone repository
 
   https://github.com/walkharddotninja/spiritanimal.git
 
+*This was tested on node v6.2.2*
+
 Open terminal/command prompt and run npm install
 
   $npm install
