@@ -1,0 +1,29 @@
+<div data-ng-show="!show" class="jumbotron magic-jt center">
+  <h1>Have You Always Wanted to Know Your Spirit Animal?</h1>
+  <p>Your wonderful TA's have decided to use this example to make that happen. Enter your name below to reveal your spirit animal!</p>
+  <span><input class="btn btn-lg btn-default" type="button" onclick="location.href='http://www.sanger.dk/';" value="No... Just No." /></span>
+  <span><input data-ng-click="show=!show" class="btn btn-lg btn-success" type="button" value="OMG! YES!" /></span>
+</div>
+
+<div data-ng-show="show" class="container magic-form">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <form data-ng-submit="infoSubmit()" role="form">
+        <fieldset>
+          <div class="form-group">
+            <label><h4> First Name </h4></label>
+            <input data-ng-model="first" class="form-control input-lg" type="text" placeholder="first name" required autofocus autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label><h4> Last Name </h4></label>
+            <input data-ng-model="last" class="form-control input-lg" type="text" placeholder="last name" required autocomplete="off" />
+          </div>
+          <div class="magic center">
+            <input class="btn btn-lg btn-danger" type="submit" value="Magic!" />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>

@@ -5,5 +5,8 @@
   angular.module('indexController', ['indexService'])
   .controller('indexController', function($scope, indexService) {
     //
+    $scope.show = false;
+
+    $scope.infoSubmit = function() { indexService.findAnimal({firstName: $scope.first, lastName: $scope.last }); };
   });
 })();

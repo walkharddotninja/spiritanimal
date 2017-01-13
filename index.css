@@ -1,3 +1,121 @@
-body {
+body { background-color: #000; }
 
+h1, h2, h3, h4, h5, h6, p, .magic-jt, .animal-jt { color: white; }
+
+.magic-jt, .magic-form, .bg, .animal-jt {
+  position: absolute;
+  width: 100%;
+}
+
+.magic-jt, .animal-jt {
+  top: 20%;
+  background-color: rgba(0,0,0,0);
+}
+
+@keyframes fade-in-jt {
+  0% { opacity: 0.0; }
+  32.5% { opacity: 0.0; }
+  65.75% { opacity: 0.50; }
+  100% { opacity: 1.00; }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade-in-jt {
+  0% { opacity: 0.0; }
+  32.5% { opacity: 0.0; }
+  65.75% { opacity: 0.50;}
+  100% { opacity: 1.00; }
+}
+
+.magic-jt {
+  animation-name: fade-in-jt;
+  animation-duration: 7s;
+  -webkit-animation-name: fade-in-jt;
+  -webkit-animation-duration: 7s;
+}
+
+.magic-form { top: 26.5%; }
+.magic { padding-top: 3rem; }
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }
+
+@keyframes fade-in-bg {
+  0% { opacity: 0.0; }
+  50% { opacity: 1.00; }
+  100% { opacity: 0.20; }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade-in-bg {
+  0% { opacity: 0.0; }
+  50% { opacity: 1.00; }
+  100% { opacity: 0.20; }
+}
+
+.bg {
+  z-index: -1;
+  top: 0;
+  left: 0;
+  opacity: 0.20;
+  height: 100%;
+  animation-name: fade-in-bg;
+  animation-duration: 6s;
+  -webkit-animation-name: fade-in-bg;
+  -webkit-animation-duration: 6s;
+}
+
+@keyframes fade-in-mf {
+  0% { opacity: 0.0; }
+  100% { opacity: 1.00; }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade-in-mf {
+  0% { opacity: 0.0; }
+  100% { opacity: 1.00; }
+}
+
+.magic-form {
+  top: 26.5%;
+  animation-name: fade-in-mf;
+  animation-duration: 2s;
+  -webkit-animation-name: fade-in-mf;
+  -webkit-animation-duration: 2s;
+}
+
+@keyframes fade-in-al {
+  0% { opacity: 0.0; }
+  100% { opacity: 1.00; }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade-in-al {
+  0% { opacity: 0.0; }
+  100% { opacity: 1.00; }
+}
+
+.animal {
+  animation-name: fade-in-al;
+  animation-duration: 7s;
+  -webkit-animation-name: fade-in-al;
+  -webkit-animation-duration: 7s;
+}
+
+@keyframes fade-in-a {
+  0% { opacity: 0.0; }
+  100% { opacity: 1.00; }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fade-in-a {
+  0% { opacity: 0.0; }
+  100% { opacity: 1.00; }
+}
+
+.animal {
+  animation-name: fade-in-a;
+  animation-duration: 14s;
+  -webkit-animation-name: fade-in-a;
+  -webkit-animation-duration: 14s;
 }
